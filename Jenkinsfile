@@ -18,7 +18,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Changed path from Debug to Release to match the Build stage above
-                bat "x64\\Release\\test_repos.exe --gtest_output=xml:test_report.xml"
+                bat '"C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe" test_repos.sln /t:Build /p:Configuration=Release'
             }
         }
     }
