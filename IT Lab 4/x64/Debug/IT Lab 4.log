@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  test.cpp
+C:\Users\ikeepcalm\source\repos\IT Projects 4\IT Lab 4\stringProcessor.h(10,34): warning C4114: same type qualifier used more than once
+  (compiling source file '/test.cpp')
+  
+C:\Users\ikeepcalm\source\repos\IT Projects 4\IT Lab 4\stringProcessor.h(20,12): warning C4267: 'return': conversion from 'size_t' to 'const int32_t', possible loss of data
+  (compiling source file '/test.cpp')
+  
+  IT Lab 4.vcxproj -> C:\Users\ikeepcalm\source\repos\IT Projects 4\IT Lab 4\x64\Debug\IT Lab 4.exe
