@@ -4,14 +4,14 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/ikeepcalm/jenkins-template', credentialsId: 'fe534d13-c2fe-4307-85d4-eb474f57f83d'
+                git url: 'https://github.com/ikeepcalm/jenkins-template', credentialsId: 'fe534d13-c2fe-4307-85d4-eb474f57f83d', branch: 'main' 
             }
         }
         
         stage('Build') {
             steps {
                 // Building in Release mode
-                bat '"path to MSBuild" test_repos.sln /t:Build /p:Configuration=Release'
+                bat '"C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin" test_repos.sln /t:Build /p:Configuration=Release'
             }
         }
 
